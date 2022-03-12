@@ -551,7 +551,7 @@ section:nth-child(even){
         box-shadow: var(--box-shadow);
         width: 30rem;
         border: var(--border);
-        background: #fff;
+        background: var(--primary);
         transform: scale(0);
         opacity: 0;
         transform-origin: top right;
