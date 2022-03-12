@@ -2,7 +2,7 @@
 
 :root{
     --primary:#032032;
-    --black:#07a8a3;
+    --second:#07a8a3;
     --white: #fff;
     --light-color:#777;
     --box-shadow:.5rem .5rem 0 rgba(3, 32, 50, .2);
@@ -40,7 +40,7 @@ section:nth-child(even){
     padding-bottom: 2rem;
     text-shadow: var(--text-shadow);
     text-transform: uppercase;
-    color:var(--black);
+    color:var(--second);
     font-size: 5rem;
     letter-spacing: .4rem;
 }
@@ -102,7 +102,7 @@ section:nth-child(even){
 }
 
 .header .navbar a:hover{
-    color: var(--black);
+    color: var(--second);
 }
 
 #menu-btn{
@@ -137,7 +137,7 @@ section:nth-child(even){
 
 .home .content h3{
     font-size: 4.5rem;
-    color:var(--black);
+    color:var(--second);
     line-height: 1.8;
     text-shadow: var(--text-shadow);
 }
@@ -173,7 +173,7 @@ section:nth-child(even){
 
 .icons-container .icons h3{
     font-size: 4.5rem;
-    color:var(--black);
+    color:var(--second);
     padding: .5rem 0;
     text-shadow: var(--text-shadow);
 }
@@ -204,7 +204,7 @@ section:nth-child(even){
 }
 
 .services .box-container .box h3{
-    color: var(--black);
+    color: var(--second);
     font-size: 2.5rem;
     padding:1rem 0;
 }
@@ -235,7 +235,7 @@ section:nth-child(even){
 }
 
 .about .row .content h3{
-    color: var(--black);
+    color: var(--second);
     text-shadow: var(--text-shadow);
     font-size: 4rem;
     line-height: 1.8;
@@ -272,7 +272,7 @@ section:nth-child(even){
 }
 
 .doctors .box-container .box h3{
-    color:var(--black);
+    color:var(--second);
     font-size: 2.5rem;
 }
 
@@ -328,7 +328,7 @@ section:nth-child(even){
 }
 
 .book .row form h3{
-    color:var(--black);
+    color:var(--second);
     padding-bottom: 1rem;
     font-size: 3rem;
 }
@@ -339,7 +339,7 @@ section:nth-child(even){
     border-radius: .5rem;
     border:var(--border);
     font-size: 1.6rem;
-    color: var(--black);
+    color: var(--second);
     text-transform: none;
     padding: 1rem;
 }
@@ -460,7 +460,7 @@ section:nth-child(even){
 }
 
 .blogs .box-container .box .content h3{
-    color:var(--black);
+    color:var(--second);
     font-size: 3rem;
 }
 
@@ -479,7 +479,7 @@ section:nth-child(even){
 
 .footer .box-container .box h3{
     font-size: 2.5rem;
-    color:var(--black);
+    color:var(--second);
     padding: 1rem 0;
 }
 
@@ -578,4 +578,53 @@ section:nth-child(even){
         font-size: 50%;
     }
 
+}
+
+
+/* Botón de Redes */
+#btn-mas{
+    display: none;
+}
+.cont{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+.networks a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: var(--second);
+    color: var(--white);
+    width: 55px;
+    height: 55px;
+    line-height: 59px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+.networks a:hover{
+    background: var(--white);
+    color: var(--second);
+}
+.networks a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 35px;
+}
+#btn-mas:checked~ .networks a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background: var(--second);
+    font-size: 35px;
+}
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 30px;
 }
